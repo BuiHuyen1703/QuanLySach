@@ -10,8 +10,7 @@ public class Main {
 		ArrayList<SachGk> arrSachGk = new ArrayList<>();
 //		
 		int soSachGiaoKhoa;
-        double tongTienSachGiaoKhoa = 0, 
-            trungBinhCongDonGia = 0;
+        double tongTienSachGiaoKhoa = 0;
         Scanner scanner = new Scanner(System.in);
          
         System.out.print("Nhập số sách giáo khoa: ");
@@ -24,8 +23,7 @@ public class Main {
             sachGiaoKhoa.nhapSach();
             arrSachGk.add(sachGiaoKhoa);
         }
-         
-//       
+            
          
         for (int i = 0; i < arrSachGk.size(); i++) {
             if (arrSachGk.get(i).getNumber() == 0) {
@@ -37,22 +35,20 @@ public class Main {
             }
         }
         System.out.println("Tổng tiền sách giáo khoa = " + tongTienSachGiaoKhoa);
-         
-//        
+                
          
         System.out.println("-----Thông tin sách giáo khoa-----");
         for (int i = 0; i < arrSachGk.size(); i++) {
             System.out.println(arrSachGk.get(i).toString());
         }
+           
+//        System.out.println("Trung bình cộng đơn giá các sách tham khảo = " + trungBinhCongDonGia);
          
-//      
-        System.out.println("Trung bình cộng đơn giá các sách tham khảo = " + trungBinhCongDonGia);
-         
-        System.out.println("---Các sách giáo khoa của nhà xuất bản X---");
-        for (int i = 0; i < arrSachGk.size(); i++) {
-            if (arrSachGk.get(i).getNhaXuatBan().equalsIgnoreCase("X")) {
-                System.out.println(arrSachGk.get(i).toString());
-            }
-        }
+//        System.out.println("---Các sách giáo khoa của nhà xuất bản X---");
+//        for (int i = 0; i < arrSachGk.size(); i++) {
+//            if (arrSachGk.get(i).getNhaXuatBan().equalsIgnoreCase("X")) {
+//                System.out.println(arrSachGk.get(i).toString());
+//            }
+//        }
 	}
 }
