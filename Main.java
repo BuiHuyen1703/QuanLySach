@@ -42,13 +42,6 @@ public class Main {
             System.out.println(arrSachGk.get(i).toString());
         }
            
-//        System.out.println("Trung bình cộng đơn giá các sách tham khảo = " + trungBinhCongDonGia);
-         
-//        System.out.println("---Các sách giáo khoa của nhà xuất bản X---");
-//        for (int i = 0; i < arrSachGk.size(); i++) {
-//            if (arrSachGk.get(i).getNhaXuatBan().equalsIgnoreCase("X")) {
-//                System.out.println(arrSachGk.get(i).toString());
-//            }
-//        }
+//       
 	}
 }
